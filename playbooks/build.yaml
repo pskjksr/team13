@@ -8,6 +8,6 @@
          name: Powerpuff gitls-team13:latest #docker image name
          source: build
          build:
-            path: ~/Powerpuff gitls-team13 #path ที่เก็บไฟล์ sourcecode 
+            path: ~/Powerpuff-gitls-team13 #path ที่เก็บไฟล์ sourcecode 
          state: present
          force_source: true
