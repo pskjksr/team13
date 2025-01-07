@@ -5,9 +5,9 @@
   tasks:
     - name: Creating the Container
       docker_container:
-         name: team33-neogym-container #docker container name
-         image: team33-neogym:latest #docker image name
+         name: Powerpuff gitls-team13-container #docker container name
+         image: Powerpuff gitls-team13:latest #docker image name
          ports:
-           - "33:80" #เลข port ตัวแรกคือเลข  port ที่รับมาจาก browser ตัวหลังคือ  port ของ docker (คงไว้ที่ 80 ถ้าเป็น nextjs project ก็ 3000)
+           - "80:80" #เลข port ตัวแรกคือเลข  port ที่รับมาจาก browser ตัวหลังคือ  port ของ docker (คงไว้ที่ 80 ถ้าเป็น nextjs project ก็ 3000)
          state: started
          restart: true
