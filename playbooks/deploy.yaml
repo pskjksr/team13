@@ -1,0 +1,13 @@
+- name: Deploy Docker Container
+  hosts: dockerservers
+  gather_facts: false
+  remote_user: root
+  tasks:
+    - name: Creating the Container
+      docker_container:
+         name: team33-neogym-container #docker container name
+         image: team33-neogym:latest #docker image name
+         ports:
+           - "33:80" #เลข port ตัวแรกคือเลข  port ที่รับมาจาก browser ตัวหลังคือ  port ของ docker (คงไว้ที่ 80 ถ้าเป็น nextjs project ก็ 3000)
+         state: started
+         restart: true

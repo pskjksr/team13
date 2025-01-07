@@ -1,0 +1,13 @@
+- name: Build Docker Image
+  hosts: dockerservers
+  gather_facts: false
+  remote_user: root
+  tasks:
+    - name: Building Docker Image
+      docker_image:
+         name: team33-neogym:latest #docker image name
+         source: build
+         build:
+            path: ~/team33-neogym #path ที่เก็บไฟล์ sourcecode 
+         state: present
+         force_source: true
