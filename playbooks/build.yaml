@@ -1,7 +1,7 @@
 - name: Build Docker Image
   hosts: dockerservers
   gather_facts: false
-  remote_user: root
+  remote_user: jenkins
   tasks:
     - name: Building Docker Image
       docker_image:
