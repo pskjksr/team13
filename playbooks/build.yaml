@@ -5,9 +5,9 @@
   tasks:
     - name: Building Docker Image
       docker_image:
-         name: powerpuffgitls-team13:latest #docker image name
+         name: jenkin-admin:latest #docker image name
          source: build
          build:
-            path: ~/powerpuffgitls-team13 #path ที่เก็บไฟล์ sourcecode 
+            path: ~/jenkin-admin #path ที่เก็บไฟล์ sourcecode 
          state: present
          force_source: true
