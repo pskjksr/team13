@@ -5,9 +5,9 @@
   tasks:
     - name: Building Docker Image
       docker_image:
-         name: jenkin-admin:latest #docker image name
+         name: test:latest #docker image name
          source: build
          build:
-            path: ~/jenkin-admin #path ที่เก็บไฟล์ sourcecode 
+            path: ~/test #path ที่เก็บไฟล์ sourcecode 
          state: present
          force_source: true
