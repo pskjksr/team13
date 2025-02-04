@@ -5,8 +5,8 @@
   tasks:
     - name: Creating the Container
       docker_container:
-         name: test-container #docker container name
-         image: test:latest #docker image name
+         name: test1-container #docker container name
+         image: test1:latest #docker image name
          ports:
            - "80:80" #เลข port ตัวแรกคือเลข  port ที่รับมาจาก browser ตัวหลังคือ  port ของ docker (คงไว้ที่ 80 ถ้าเป็น nextjs project ก็ 3000)
          state: started
